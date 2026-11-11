@@ -1,0 +1,6 @@
+{
+  "name": "Gemini AI Studio",
+  "description": "Assistente AI avanzato con motore di ragionamento logico passo-passo, ricerca web Google in tempo reale e analisi multimodale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

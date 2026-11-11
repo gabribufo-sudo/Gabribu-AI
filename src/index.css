@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gemini-blue: #1a73e8;
+    --gemini-purple: #8ab4f8;
+    --gemini-pink: #f28b82;
+  }
+
+  body {
+    background-color: #131314;
+    color: #e3e3e3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom smooth scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Gemini aurora gradient text */
+.gemini-gradient-text {
+  background: linear-gradient(135deg, #4da3ff 0%, #a855f7 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gemini-gradient-subtle {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #db2777 100%);
+}
+
+.gemini-glow {
+  box-shadow: 0 0 24px -4px rgba(124, 58, 237, 0.25);
+}
+
+.gemini-glow-active {
+  box-shadow: 0 0 30px 2px rgba(66, 133, 244, 0.35);
+}
+
+/* Pulse animation for thinking */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
